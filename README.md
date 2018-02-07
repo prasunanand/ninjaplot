@@ -13,6 +13,12 @@ cd ninjaplot
 mkdir bin
 make
 ```
+# To run
+
+```sh
+./bin/Ninjaplot
+```
+
 ## LICENSE
 
 This software is distributed under the [BSD 3-Clause License](LICENSE).
