@@ -7,7 +7,6 @@
 using namespace std;
 int main2()
 {
-  /* code */
   cout << "Hello from Ninjaplot" << endl;
   check();
   return 0;
@@ -59,13 +58,6 @@ void draw_black_frame(agg::rendering_buffer& rbuf)
 
 int main()
 {
-  // In the first example we do the following:
-  //--------------------
-  // Allocate the buffer.
-  // Clear the buffer, for now "manually"
-  // Create the rendering buffer object
-  // Do something simple, draw a diagonal line
-  // Write the buffer to agg_test.ppm
   // Free memory
   main2();
 
@@ -81,13 +73,8 @@ int main()
   unsigned i;
   for(i = 0; i < rbuf.height()/2; ++i)
   {
-    // Get the pointer to the beginning of the i-th row (Y-coordinate)
-    // and shift it to the i-th position, that is, X-coordinate.
-    //---------------
     unsigned char* ptr = rbuf.row_ptr(i) + i * 3;
     
-    // PutPixel, very sophisticated, huh? :)
-    //-------------
     *ptr++ = 127; // R
     *ptr++ = 200; // G
     *ptr++ = 98;  // B
