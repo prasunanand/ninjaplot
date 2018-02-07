@@ -15,6 +15,6 @@ make
 ```
 ## LICENSE
 
-This software is distributed under the [GPL3 license](https://www.gnu.org/copyleft/gpl.html).
+This software is distributed under the [BSD 3-Clause License](LICENSE).
 
 Copyright © 2018, Prasun Anand
